@@ -1,0 +1,342 @@
+body
+{
+	background-image: url("immagini/BG.png");/*img di sfondo*/
+	font-family: Century Gothic;/*carattere testo e titolo*/
+}
+
+#title  /*caratteristiche titolo*/
+{
+	font-size: 50px;
+    color: white;
+    padding: 20px;
+    margin: 50px;
+    position:absolute;
+	top:0; bottom:0; left:200px;right:0;
+}
+
+
+
+.btn-group .button /*gruppo bottone*/
+{
+  	background-color: rgba(255, 255, 255, 0); 
+  	border: 2px solid white;
+  	color: white;
+  	padding: 15px 80px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 25px;
+  	cursor: pointer;
+  	width: 380px;
+  	display: block;
+  	font-family: Century Gothic;
+}
+
+.btn-group .button:not(:last-child) /*gruppo bottone*/
+{
+  border-bottom: none; 
+}
+
+.btn-group .button:hover /*effetto hightlight bottone*/
+{
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.25s;
+  color: black;
+}
+
+
+.position /*caratteristiche posizione*/
+{
+	position:absolute;
+	top:0; bottom:0; left:750px;right:0;
+}
+
+.orbit /*caaratteristiche orbita bianca generali*/
+{
+	border:1px solid rgba(255, 255, 255, 0.5);
+	position:absolute;
+	top:0; bottom:0; left:0;right:0;
+	margin:auto;
+	border-radius:50%; 
+}
+
+#mercuryorbit  /*caratteristiche dell'orbita di mercurio*/
+{
+	width:100px;
+	height:100px;
+}
+
+#venusorbit  /*caratteristiche dell'orbita di venere*/
+{
+	width:200px;
+	height:200px;
+}
+
+#earthorbit  /*caratteristiche dell'orbita della terra*/
+{
+	width:300px;
+	height:300px;
+}
+
+#marsorbit  /*caratteristiche dell'orbita di marte*/
+{
+	width:400px;
+	height:400px;
+}
+
+#jupiterorbit  /*caratteristiche dell'orbita di giove*/
+{
+	width:500px;
+	height:500px;
+}
+
+#saturnorbit  /*caratteristiche dell'orbita di saturno*/
+{
+	width:600px;
+	height:600px;
+}
+
+#uranusorbit  /*caratteristiche dell'orbita di urano*/
+{
+	width:700px;
+	height:700px;
+}
+
+#neptuneorbit  /*caratteristiche dell'orbita di nettuno*/
+{
+	width:800px;
+	height:800px;
+}
+
+#sun  /*caratteristiche dell'orbita del sole*/
+{
+	width:40px;
+	height:40px;
+	background: yellow;
+	border:5px solid rgba(240, 52, 52, 1);
+}
+
+.planet  /*caratteristiche generali pianeta*/
+{
+	border-radius:50%;
+	position:absolute;
+	top:0; bottom:0; left:0;right:0;
+	overflow:hidden;
+	margin:auto;
+}
+
+
+#earth  /*dimensioni pianeta terra e richiamo animazione*/
+{
+	width:15px;
+	height:15px;
+	animation: orbitearth 40s linear infinite;
+}
+
+#mercury  /*dimensioni pianeta mercurio e richiamo animazione*/
+{
+	width:15px;
+	height:15px;
+	animation: orbitmercury 10s linear infinite;
+}
+
+#venus  /*dimensioni pianeta venere e richiamo animazione*/
+{
+	width:17px;
+	height:17px;
+	animation: orbitvenus 20s linear infinite;
+}
+
+#mars  /*dimensioni pianeta marte e richiamo animazione*/
+{
+	width:17px;
+	height:17px;
+	animation: orbitmars 80s linear infinite;
+}
+
+#jupiter  /*dimensioni pianeta giove e richiamo animazione*/
+{
+	width:30px;
+	height:30px;
+	animation: orbitjupiter 200s linear infinite;
+}
+
+#saturn  /*dimensioni pianeta saturno e richiamo animazione*/
+{
+	width:27px;
+	height:27px;
+	animation: orbitsaturn 300s linear infinite;
+	border-radius:0%;
+}
+
+#uranus  /*dimensioni pianeta urano e richiamo animazione*/
+{
+	width:25px;
+	height:25px;
+	animation: orbituranus 600s linear infinite;
+}
+
+#neptune  /*dimensioni pianeta nettuno e richiamo animazione*/
+{
+	width:25px;
+	height:25px;
+	animation: orbitneptune 1000s linear infinite;
+}
+
+.section_f /*caratteristiche icone instafram e gmail*/
+{
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: right;
+    margin-right:10px;
+    z-index: 1;
+}
+
+
+/*animazione orbite preso da https://www.w3schools.com e adattato al sito*/
+@keyframes orbitmercury 
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-50px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-50px)
+		rotate(-360deg);
+	}
+}
+
+
+@keyframes orbitvenus
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-100px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-100px)
+		rotate(-360deg);
+	}
+}
+
+
+@keyframes orbitearth
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-150px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-150px)
+		rotate(-360deg);
+	}
+}
+
+
+@keyframes orbitmars
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-200px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-200px)
+		rotate(-360deg);
+	}
+}
+
+@keyframes orbitjupiter
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-250px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-250px)
+		rotate(-360deg);
+	}
+}
+
+@keyframes orbitsaturn
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-300px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-300px)
+		rotate(-360deg);
+	}
+}
+
+@keyframes orbituranus
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-350px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-350px)
+		rotate(-360deg);
+	}
+}
+
+@keyframes orbitneptune
+{
+
+	0%
+	{
+		transform:rotate(0deg)
+		translate(-400px)
+		rotate(0deg);
+	}
+
+	100%
+	{
+		transform:rotate(360deg)
+		translate(-400px)
+		rotate(-360deg);
+	}
+}

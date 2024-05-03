@@ -1,0 +1,82 @@
+body
+{
+	background-image: url(E:/immagini/BG.png);/*percorso immagine sfondo*/
+	font-family: Century Gothic;
+}
+
+.button/*caratteristiche bottoni*/
+{
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 100px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: Century Gothic;
+    font-size: 17px;
+    position:relative;
+    left:85%;
+}
+
+.button:hover/*effetto hightlight bottone*/
+{
+    background: #FFFFFF;
+    color: black;
+}
+
+#home/*posizionamento tasto home*/
+{
+    position:absolute;
+    top:50px; bottom:0; left:30px; right:0;
+}
+
+#title/*caratteristiche titolo*/
+{
+	font-size: 50px;
+    color: white;
+    padding: 20px;
+}
+
+#text/*caratteristiche testo body*/
+{
+	font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 150px;
+    position:absolute;
+	top:0; bottom:0; left:40px;right:0;
+    text-align: justify;
+}
+
+#sun/*caratteristiche img sole*/
+{
+    float:right; width:450px;height:450px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: 2px solid #FFFFFF;
+}
+
+#videodiv/*caratteristiche video giove*/
+{
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left:11%;
+}
+
+.right/*caratteristicheb img alieno=ancora*/
+{
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: right;
+    margin-right:10px;
+    z-index: 1;
+}
+
+
